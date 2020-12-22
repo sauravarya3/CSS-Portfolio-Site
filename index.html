@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="CSS/fontawesome-free-5.14.0-web/css/all.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="sides">
+          <div class="leftside">
+            <div class="navlinkwrapper activenavlink">
+              <a href="./index.html">Home</a>
+            </div>
+            <div class="navlinkwrapper">
+              <a href="./about.html">About</a>
+            </div>
+          </div>
+          <div class="rightside">
+            <div class="brand">
+              <div>SAURAVARYA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="portfolios">
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio1.jpeg" alt="portfolio image 1" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <a href="./about.html">
+                    <i class="fab fa-facebook fa-5x"></i>
+                  </a>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio2.jpeg" alt="portfolio image 2" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio3.webp" alt="portfolio image 3" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio4.jpeg" alt="portfolio image 4" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio5.webp" alt="portfolio image 5" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio6.webp" alt="portfolio image 6" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio7.jpeg" alt="portfolio image 7" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio8.jpeg" alt="portfolio image 8" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfoliobackground">
+              <img src="./images/portfolio9.webp" alt="portfolio image 9" />
+              <div class="textwrapper">
+                <div class="logo">
+                  <i class="fab fa-facebook fa-5x"></i>
+                </div>
+                <div class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, eligendi.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portfolio = document.querySelectorAll(".portfoliobackground");
+
+    portfolio.forEach((portfolioitem) => {
+      portfolioitem.addEventListener("mouseover", () => {
+        console.log(portfolioitem.childNodes[1].classList);
+        portfolioitem.childNodes[1].classList.add("img-darken");
+      });
+
+      portfolioitem.addEventListener("mouseout", () => {
+        console.log(portfolioitem.childNodes[1].classList);
+        portfolioitem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>
